@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  #font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  background:white;
+  padding: 20px;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #b300b3;
+ # border-image: url(comp2.jpg) 30 round;
+  #background-image: url(comp2.jpg) 
+  animation-name: example;
+  animation-duration: 2s;
+   animation: example 5s infinite;
+   border-color: silver;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+   #background-color: #A52A2A;
+
+}
+img{
+  	border-radius: 50%;
+  }
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: dashed;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 500px;
+   line-height: 0.3;
+   color:black;
+
+
+ /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:  silver;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 100px;
+  
+}
+@keyframes example {
+  0%   {background-color: #CCFFFF;}
+  25%  {background-color: #00FFFF;}
+  50%  {background-color: orange;}
+  50% {background-color: #00FFFF;}
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+<header>
+  <h4>Student Resume cum Blog</h4>
+  <h6 style="text-align: bottom-left">-Guided by:Mr. S.S. Sontakke</h6>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <img src="suk.jpg" width="350", height="430">
+    </ul>
+  </nav>
+  
+  <article >
+    <h3 >Name of Student: Sukanya Sanjay Gaikwad.</h3><br>
+        <h3>Date of Birth: 23/07/1999</h3><br>
+            <h3>Father's Name: Sanjay Yashwant Gaikwad</h3><br>
+
+    <h3>Address:  Chikhali,Shirala,Sangli,Maharashtra,415408</h3><br>
+    <h3>Qualification: B.Tech(TYCSE) pursuing</h3><br>
+    <h3>Hobbies: Sketching.</h3><br>
+    <h3>Email ID: sukanyagaikwad156011@gmail.com </h3><br>
+      <h3>Programming lang.: Core Java</h3><br>
+       <h3>Framework known: Ruby On Rails.</h3><br>
+       <h3>Course: Internet and Web Programming</h3><br>
+   
+  
+  
+
+  </article>
+</section>
+
+<footer>
+ 
+<a href="page2.html" class="button">BLOG</a>
+
+</footer>
+
+</body>
+</html>

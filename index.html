@@ -1,0 +1,75 @@
+<html>
+</html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width,  intial-scale=1.0">
+</head>
+<body style="background-color: green">
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCeLINMCqu36_0DjycdA5AnvoHsrC7hdzk",
+    authDomain: "blog-c6833.firebaseapp.com",
+    databaseURL: "https://blog-c6833.firebaseio.com",
+    projectId: "blog-c6833",
+    storageBucket: "blog-c6833.appspot.com",
+    messagingSenderId: "880756009212",
+    appId: "1:880756009212:web:15a01d2e869ae0e8f60f79",
+    measurementId: "G-S23KF9EHSN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+  //firebase.analytics();
+
+  		function writeData()
+  		{
+  			firebase.database().ref("user").push
+  			({
+  				name: document.getElementById("namefield").value ,
+  				lastname: document.getElementById("lastnamefield").value
+  			});
+  		}
+</script>
+
+<style >
+	span.b
+		{
+			color: blue;
+		}
+		.m
+		{
+			background-color: pink;
+			padding: 20px;
+			border: 10px solid black;
+			margin: 100px;
+			animation-name:my;
+			animation-duration: 5s;
+		}
+</style>
+<h1 style="color: pink"><center>Welcome!!!!!!.</center></h1>
+	<p class="m">Give following information just for <span class="b">Record...</span></p>
+
+	<center><label style="color: white">first name:</label><br>
+	<input type="text" placeholder="name" id="namefield"><br>
+	<label style="color: white">Lastname:</label><br>
+	<input type="text" placeholder="lastname" id="lastnamefield">
+
+	<br><br>
+	<button onclick="writeData()">submit</button>
+
+
+	<h1><a href="page1.html" class="button" style="color: yellow">next</a></h1>
+
+	
+</body>
+</html>
